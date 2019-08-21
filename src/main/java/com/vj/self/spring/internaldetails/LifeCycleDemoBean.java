@@ -28,7 +28,7 @@ public class LifeCycleDemoBean implements InitializingBean, DisposableBean, Bean
 
     @Override
     public void destroy() throws Exception {
-        System.out.println("**************Destroy method called");
+        System.out.println("**************Destroy method called **********");
         
     }
     
