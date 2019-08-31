@@ -11,20 +11,19 @@ pipeline {
         }
     }
     stages {
-        stage('clone repo') { 
+        stage('clean repo') { 
             steps {
-                bat "git clone https://github.com/vj201292/spring-bean-life-cycle.git"
-                bat "mvn clean -f spring-bean-life-cycle"
+               "mvn clean"
             }
         }
         stage('Test') { 
             steps {
-                bat "mvn test -f spring-bean-life-cycle"
+                "mvn test"
             }
         }
         stage('Deploy') { 
             steps {
-                bat "mvn package -f spring-bean-life-cycle" 
+                 "mvn package" 
             }
         }
     }
