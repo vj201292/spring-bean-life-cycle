@@ -13,17 +13,17 @@ pipeline {
     stages {
         stage('clean repo') { 
             steps {
-               "mvn clean"
+              bat "mvn clean"
             }
         }
         stage('Test') { 
             steps {
-                "mvn test"
+               bat "mvn test"
             }
         }
         stage('Deploy') { 
             steps {
-                 "mvn package" 
+                bat "mvn package" 
             }
         }
     }
