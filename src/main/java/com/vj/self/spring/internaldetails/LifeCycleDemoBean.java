@@ -45,12 +45,13 @@ public class LifeCycleDemoBean implements InitializingBean, DisposableBean, Bean
 
     @Override
     public void setBeanName(String s) {
-        System.out.println("********************setBeanName() called"+s);
+        
+        System.out.println("********************setBeanName() called***********"+s);
     }
 
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("********************setBeanFactory() called");
+        System.out.println("********************setBeanFactory() called**********");
     }
 
     @Override
